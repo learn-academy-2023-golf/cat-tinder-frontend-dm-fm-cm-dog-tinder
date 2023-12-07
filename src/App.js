@@ -4,7 +4,7 @@ import { Route, Routes} from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Home from './pages/Home'
-import DogIndex from './pages/DogIndex'
+// import DogIndex from './pages/DogIndex'
 import DogNew from './pages/DogNew'
 import DogShow from './pages/DogShow'
 import DogEdit from './pages/DogEdit'
@@ -18,7 +18,7 @@ const App = () => {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
+      {/* <Route path="/dogindex" element={<DogIndex dogs={dogs} />} /> */}
       <Route path="/dognew" element={<DogNew />} />
       <Route path="/dogshow" element={<DogShow />} />
       <Route path="/dogedit" element={<DogEdit />} />
