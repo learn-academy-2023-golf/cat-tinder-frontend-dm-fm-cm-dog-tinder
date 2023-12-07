@@ -1,27 +1,19 @@
-import React from 'react';
-import {Nav, NavItem, NavLink} from 'reactstrap';
+import React from 'react'
 
 
 const Footer = () => {
   return (
-    <>
-    <Nav>  
-        <NavItem>
-          <NavLink
-            active
-            href="#"
-          >
-            Link
-          </NavLink>
-        </NavItem>
-        <NavItem>
-          <NavLink href="#">
-            Another Link
-          </NavLink>
-        </NavItem>
-      </Nav>
-    </>
-  )
+    <footer>
+    <p>&copy; 2023 Dog Tinder | Derek & Franz | 
+      <a 
+        target="blank" 
+        href="https://dallaspetsalive.org/"
+      >
+        Adopt a Dog!
+      </a>
+    </p>
+  </footer>
+)
 }
 
 export default Footer

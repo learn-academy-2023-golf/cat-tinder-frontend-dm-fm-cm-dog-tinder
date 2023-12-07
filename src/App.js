@@ -9,17 +9,16 @@ import DogNew from './pages/DogNew'
 import DogShow from './pages/DogShow'
 import DogEdit from './pages/DogEdit'
 import NotFound from './pages/NotFound'
-import dogs from './mockDogs'
+import mockDogs from './mockDogs'
 
 const App = () => {
-  const [mockDogs, setMockDogs] = useState(dogs)
-  console.log(mockDogs)
+  const [dogs, setMockDogs] = useState(mockDogs)
   return (
     <>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/dogindex" element={<DogIndex />} />
+      <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
       <Route path="/dognew" element={<DogNew />} />
       <Route path="/dogshow" element={<DogShow />} />
       <Route path="/dogedit" element={<DogEdit />} />

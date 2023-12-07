@@ -1,25 +1,33 @@
 import React from 'react';
 import {Nav, NavItem, NavLink} from 'reactstrap'
+import dogLogo from '../assets/dog-logo.png'
 
 const Header = () => {
   return (
-    <>
-      <Nav>  
+    <header> 
+      <Nav justified>
         <NavItem>
-          <NavLink
-            active
-            href="#"
-          >
-            Link
+          <NavLink to="/">
+            <img 
+              src={dogLogo} 
+              alt="pitbull"
+              height="40"
+              width="60"
+            />
           </NavLink>
         </NavItem>
         <NavItem>
-          <NavLink href="#">
-            Another Link
+          <NavLink to="/dogindex">
+            Meet the Dawgs
+          </NavLink>
+        </NavItem>
+        <NavItem>
+          <NavLink to="/dognew">
+            Join the Dawg pound
           </NavLink>
         </NavItem>
       </Nav>
-    </>
+    </header>
   )
 }
 
