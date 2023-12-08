@@ -18,9 +18,9 @@ const App = () => {
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
-      {/* <Route path="/dogindex" element={<DogIndex dogs={dogs} />} /> */}
+      <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
       <Route path="/dognew" element={<DogNew />} />
-      <Route path="/dogshow" element={<DogShow />} />
+      <Route path="/dogshow/:id" element={<DogShow dogs={dogs} />} />
       <Route path="/dogedit" element={<DogEdit />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
