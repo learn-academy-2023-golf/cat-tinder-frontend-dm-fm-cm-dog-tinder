@@ -12,14 +12,18 @@ import NotFound from './pages/NotFound'
 import mockDogs from './mockDogs'
 
 const App = () => {
-  const [dogs, setMockDogs] = useState(mockDogs)
+  const [dogs, setDogs] = useState(mockDogs)
+
+  const createDog = (createdDog) => {
+    
+  }
   return (
     <>
     <Header />
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
-      <Route path="/dognew" element={<DogNew />} />
+      <Route path="/dognew" element={<DogNew createDog={createDog}/>} />
       <Route path="/dogshow/:id" element={<DogShow dogs={dogs} />} />
       <Route path="/dogedit" element={<DogEdit />} />
       <Route path="*" element={<NotFound />} />
