@@ -1,5 +1,5 @@
-import './App.css';
-import React, { useState } from 'react'
+import './App.css'
+import React, { useState, useEffect } from 'react'
 import { Route, Routes} from 'react-router-dom'
 import Footer from './components/Footer'
 import Header from './components/Header'
@@ -17,6 +17,15 @@ const App = () => {
   const createDog = (createdDog) => {
     
   }
+
+  const updateDog = (updatedDog) => {
+    setDogs((prevDogs) =>
+      prevDogs.map((dog) => (dog.id === updatedDog.id ? updatedDog : dog))
+    )
+  }
+
+  useEffect(() => {
+  }, [])
   return (
     <>
     <Header />
@@ -25,7 +34,7 @@ const App = () => {
       <Route path="/dogindex" element={<DogIndex dogs={dogs} />} />
       <Route path="/dognew" element={<DogNew createDog={createDog}/>} />
       <Route path="/dogshow/:id" element={<DogShow dogs={dogs} />} />
-      <Route path="/dogedit" element={<DogEdit />} />
+      <Route path="/dogedit/:id" element={<DogEdit dogs={dogs} updateDog={updateDog} />} />
       <Route path="*" element={<NotFound />} />
     </Routes>
     <Footer />
