@@ -1,6 +1,7 @@
 import React from 'react';
-import {Nav, NavItem, NavLink} from 'reactstrap'
+import {Nav, NavItem } from 'reactstrap'
 import dogLogo from '../assets/dog-logo.png'
+import { NavLink } from 'react-router-dom';
 
 const Header = () => {
   return (

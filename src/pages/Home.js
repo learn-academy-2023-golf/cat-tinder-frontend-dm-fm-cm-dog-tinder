@@ -8,7 +8,7 @@ const Home = () => {
           Get ready to let the dawgs out!
         </h2>
         <h2>
-          Introducing Dog Tinder - the ultimate place to let you dogs be dawgs!
+          Introducing Dog Tinder - The ultimate place to let you dogs be dawgs and find that puppy love!
         </h2>
       </div> 
     </main>
