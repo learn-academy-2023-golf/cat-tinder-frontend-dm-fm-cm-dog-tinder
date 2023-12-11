@@ -3,7 +3,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer style={{ color: 'red' }}>
     <p>&copy; 2023 Dog Tinder | Derek & Franz | 
       <a 
         target="blank" 

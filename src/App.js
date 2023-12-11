@@ -15,14 +15,10 @@ const App = () => {
   const [dogs, setDogs] = useState(mockDogs)
 
   const createDog = (createdDog) => {
-    
-  }
+    }
 
-  const updateDog = (updatedDog) => {
-    setDogs((prevDogs) =>
-      prevDogs.map((dog) => (dog.id === updatedDog.id ? updatedDog : dog))
-    )
-  }
+  const updateDog = (updatedDog) => {  
+   }
 
   useEffect(() => {
   }, [])

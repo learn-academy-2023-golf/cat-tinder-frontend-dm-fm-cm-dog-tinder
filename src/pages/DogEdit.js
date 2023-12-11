@@ -21,23 +21,24 @@ const DogEdit = ({ dogs, updateDog }) => {
   };
 
   const handleSubmit = () => {
-    updateDog(editDog, currentDog.id);
+    updateDog(editDog);
     navigate("/dogindex");
   };
 
   return (
     <>
+    <div className="dog-edit-container">
       <h2>Edit Dog</h2>
-      <Form>
-        <FormGroup>
-          <Label for="name">Name</Label>
-          <Input
-            name="name"
-            type="text"
-            defaultValue={editDog.name}
-            onChange={handleChange}
-          />
-        </FormGroup>
+        <Form>
+          <FormGroup>
+            <Label for="name">Name</Label>
+            <Input
+              name="name"
+              type="text"
+              defaultValue={editDog.name}
+              onChange={handleChange}
+              />
+          </FormGroup>
         <FormGroup>
           <Label for="age">Age</Label>
           <Input
@@ -69,6 +70,7 @@ const DogEdit = ({ dogs, updateDog }) => {
           Submit
         </Button>
       </Form>
+      </div>
     </>
   );
 };

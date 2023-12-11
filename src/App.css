@@ -36,3 +36,85 @@
     transform: rotate(360deg);
   }
 }
+
+.landing {
+  background-image: url("./assets/dog-background.png");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+}
+
+header, footer {
+  font-size: 20px;
+  width: 100%;
+  background-color: black;
+}
+
+footer {
+  bottom: 0;
+  height: 2em;
+  left: 0;
+  position: fixed;
+  font-size: small;
+  z-index: 9;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  z-index: 20;
+}
+
+.home-position {
+  position: absolute;
+  top: 10vh;
+  padding: 40px;
+  width: 100vw;
+  color: white;
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 80px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.index-page {
+  padding-top: 100px;
+  background-color: gray;
+}
+
+.index-header {
+  padding: 20px;
+}
+
+.btn-secondary {
+  --bs-btn-bg: #cac1b4 !important;
+  --bs-btn-hover-bg: #e8ddcc !important;
+}
+
+.show-page img {
+  width: 300px;
+  height: 300px;
+}
+ 
+.show-page {
+background-color: gray;  
+padding-top: 100px;
+padding-left: 20px;
+padding-bottom: 100%;
+}
+
+.dog-edit-container {
+  background-color: gray;
+}
